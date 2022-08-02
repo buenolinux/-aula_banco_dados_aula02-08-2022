@@ -165,7 +165,7 @@ DROP FUNCTION TiraEspaco;
 Função para fazer uma subtração
 */
 
-CREATE FUNCTION Subracao(
+CREATE FUNCTION Subtracao(
 	@num1 AS INT,
 	@num2 AS INT)
 RETURNS INT
@@ -173,6 +173,12 @@ AS
 BEGIN
 	DECLARE @calc AS INT
 	SET @calc = @num1 - @num2
-	RETURN
+	RETURN @calc
 END;
 
+
+
+/*
+Chamando a função
+*/
+SELECT dbo.Subtracao(50,10);
