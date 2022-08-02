@@ -121,3 +121,19 @@ SELECT MIN(salario) AS 'Maior salário ' FROM tab_professores;
 SELECT SUM(salario) AS 'Total de salários' FROM tab_professores;
 
 /* Converte uma string para minúscula */
+SELECT LOWER(nome) FROM tab_alunos;
+SELECT nome FROM tab_alunos
+/*  Converte uma string para maiúsculo */
+SELECT UPPER(nome) FROM tab_alunos;
+
+/* Remove espaços em branco à esquerda de uma string */
+
+DECLARE @nome VARCHAR(20)
+SET @nome =' Fabio '
+SELECT LTRIM(@nome);
+
+/* Remove espaços em branco à direita de uma string */
+
+DECLARE @nome2 VARCHAR(20)
+SET @nome2 =' Fabio '
+SELECT RTRIM(@nome2);
