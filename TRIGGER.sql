@@ -160,3 +160,19 @@ Para remover uma funcion
 */
 
 DROP FUNCTION TiraEspaco;
+
+/*
+Função para fazer uma subtração
+*/
+
+CREATE FUNCTION Subracao(
+	@num1 AS INT,
+	@num2 AS INT)
+RETURNS INT
+AS
+BEGIN
+	DECLARE @calc AS INT
+	SET @calc = @num1 - @num2
+	RETURN
+END;
+
