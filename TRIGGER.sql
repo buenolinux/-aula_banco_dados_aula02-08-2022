@@ -137,3 +137,20 @@ SELECT LTRIM(@nome);
 DECLARE @nome2 VARCHAR(20)
 SET @nome2 =' Fabio '
 SELECT RTRIM(@nome2);
+
+/* --------------------------- */
+
+/* Funções  personalizadas 
+	Remover espaços de uma string
+*/
+
+CREATE FUNCTION TiraEspaco (@texto VARCHAR(50))
+RETURNS VARCHAR(50)
+AS 
+BEGIN
+	RETURN (LTRIM(RTRIM(@texto)))
+END;
+
+/* Chamando a função */
+
+SELECT dbo.TiraEspaco(' Senac Vila Prudente ');
