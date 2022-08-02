@@ -42,3 +42,18 @@ BEGIN
 	UPDATE tab_caixa SET saldo_final = saldo_final - @var_valor
 	WHERE data = @var_data
 END;
+
+
+
+SELECT * FROM tab_caixa;
+SELECT * FROM tab_vendas;
+
+/*
+	Vamos excluir uma venda
+*/
+
+DELETE FROM tab_vendas WHERE id_venda = 1;
+
+/* Para visualizar todas as trigger do sistema */
+
+SELECT * FROM sys.triggers;
