@@ -95,4 +95,29 @@ SELECT DATEADD(YEAR,1,'20220508')
 
 SELECT SUBSTRING ('Banana',2,3);
 
-/* */
+/* Retorna o tamanho de uma string */
+
+SELECT LEN('Paralelepípedo');
+
+/* Faz a contagem de registros de uma coluna */
+
+USE escola;
+SELECT COUNT(id_aluno) AS 'Quantidade de alunos'
+FROM tab_alunos;
+
+/* Calcular média com a função AVG*/
+SELECT AVG(salario) AS 'Média dos salários 'FROM  tab_professores;
+
+/* Retorna o maior valor de uma coluna */
+
+SELECT MAX(salario) AS 'Maior salário ' FROM tab_professores;
+
+/* Retorna o menor valor */
+
+SELECT MIN(salario) AS 'Maior salário ' FROM tab_professores;
+
+
+/* Retorna a soma de uma coluna */
+SELECT SUM(salario) AS 'Total de salários' FROM tab_professores;
+
+/* Converte uma string para minúscula */
