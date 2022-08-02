@@ -57,3 +57,11 @@ DELETE FROM tab_vendas WHERE id_venda = 1;
 /* Para visualizar todas as trigger do sistema */
 
 SELECT * FROM sys.triggers;
+
+/* ------------------------------------------------------*/
+
+/*
+Funções internas 
+-- DATEDIFF
+-- Diferença entre datas
+*/
