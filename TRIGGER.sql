@@ -82,4 +82,17 @@ SELECT DATEPART(MONTH, '2020-02-12') AS 'Mês';
 
 SELECT DATEPART(YEAR, '2020-02-12') AS 'Ano';
 
-/* Adicionar um perído a uma data  */
+/* Adicionar um perído a uma data. Usar no padrão estadonidense sem hifens */
+
+SELECT DATEADD(DAY,1,'20220508');
+
+/* Adiciona um periódo no mês*/
+SELECT DATEADD(MONTH,1,'20220508');
+/*Adicionar um período no ano */
+SELECT DATEADD(YEAR,1,'20220508')
+
+/* Retorna parte uma string */
+
+SELECT SUBSTRING ('Banana',2,3);
+
+/* */
