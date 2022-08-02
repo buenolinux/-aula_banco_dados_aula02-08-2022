@@ -65,3 +65,21 @@ Funções internas
 -- DATEDIFF
 -- Diferença entre datas
 */
+
+SELECT DATEDIFF(DAY,'2022-01-01','2022-05-05') AS 'Dia(s)';
+SELECT DATEDIFF(MONTH, '2022-01-01','2022-05-05') AS 'Mês(es)';
+SELECT DATEDIFF(YEAR, '2022-01-01','2022-05-05') AS 'Ano(S)';
+
+/* Mostra a data do sistema */
+
+SELECT GETDATE();
+
+/* Extração de parte da data */
+
+SELECT DATEPART(DAY,'2020-08-12') AS 'Dia';
+
+SELECT DATEPART(MONTH, '2020-02-12') AS 'Mês';
+
+SELECT DATEPART(YEAR, '2020-02-12') AS 'Ano';
+
+/* Adicionar um perído a uma data  */
