@@ -23,3 +23,6 @@ SELECT * FROM tab_vendas;
 
 INSERT INTO tab_vendas (data, valor)
 VALUES ('2022-08-02',50);
+
+INSERT INTO tab_vendas (data, valor)
+VALUES ('2022-08-02',1272);
