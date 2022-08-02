@@ -154,3 +154,9 @@ END;
 /* Chamando a função */
 
 SELECT dbo.TiraEspaco(' Senac Vila Prudente ');
+
+/*
+Para remover uma funcion
+*/
+
+DROP FUNCTION TiraEspaco;
