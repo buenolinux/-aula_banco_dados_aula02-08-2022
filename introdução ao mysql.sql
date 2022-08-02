@@ -40,3 +40,7 @@ CREATE TABLE tab_turmas(
     REFERENCES tab_salas(id_sala)
     
 );
+
+INSERT INTO tab_alunos(nome, email,fone)
+VALUES
+('João', 'joao@gmail.com','(11) 912345678');
